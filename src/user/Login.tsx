@@ -15,7 +15,7 @@ function Button(){
     return(
     <>
     <div>
-        <button>Logiin</button>
+        <button>Login</button>
     </div>
     </>
     )
@@ -29,7 +29,7 @@ function Signup(){
 
 function Authenticate(){
 
-    let username = "";
+    let username = "Doris";
     let password = "1234"
     return(
         <>
