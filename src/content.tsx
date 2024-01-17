@@ -21,6 +21,6 @@ function Maincontent(){
         </div>
         </>
         
-    )
+     )
 }
 export default Maincontent;
