@@ -15,7 +15,7 @@ function Button(){
     return(
     <>
     <div>
-        <button>Login</button>
+        <button>Logiin</button>
     </div>
     </>
     )
