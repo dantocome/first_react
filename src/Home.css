@@ -1,0 +1,21 @@
+.img1{
+    width: 130px;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 80px;
+}
+nav ul li{
+    display: inline-block;
+    padding-right: 20px;
+    
+}
+.list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+span .btn{
+    
+}
