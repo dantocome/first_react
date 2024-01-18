@@ -58,6 +58,14 @@ li a:hover{
     justify-content: flex-end;
     gap: 50px;
 }
-span .btn{
+.btn{
+    height: 40px;
+    width: 170px;
+    background-color: rgb(255, 41, 83);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+    border-radius: 5px;
     
 }
