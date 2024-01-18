@@ -40,17 +40,18 @@ function Home(){
             </div>
 
         </header>
-         <div className="hero">
+          
+           <div className="picture">
            <div className="text">
               <h1>REJUVENATE<br></br> Your Health Through<br></br>
               Quality and Well Tested,<br></br> processed
               Nature Drinks
               </h1>
            </div>
-           <div className="picture">
+           <div className="text">
             <img className="sour" src={Soursop} alt="" />
+            </div>
            </div>
-         </div>
         </>
     )
 }
