@@ -4,7 +4,7 @@ import Maincontent from "./content"
 import States from "./States"
 import "./assets/module/default.css"
 import Authenticate from "./user/Login"
-import Project from "./pro"
+import Home from "./Home"
 
 function App() {
  return(
@@ -15,7 +15,7 @@ function App() {
   <Maincontent/>
   <States/>
   <Authenticate/> */}
-  <Project/>
+  <Home/>
  </>
  )
 }
