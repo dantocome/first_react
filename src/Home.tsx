@@ -47,6 +47,20 @@ function Home(){
               Quality and Well Tested,<br></br> processed
               Nature Drinks
               </h1>
+              <p>Look out for some of our vacinating health nuggets:<br></br>
+              Leveragin on great testimonials across the globe.</p>
+              <div className="nug">
+              <div className="nug1">
+                <h5>We give the Best Natural Nutitional Advice</h5>
+              </div>
+              <div className="nug1">
+                <h5>We give the Best Natural Nutitional Advice</h5>
+              </div>
+              <div className="nug1">
+                <h5>We give the Best Natural Nutitional Advice</h5>
+              </div>
+              </div>
+
            </div>
            <div className="text">
             <img className="sour" src={Soursop} alt="" />
