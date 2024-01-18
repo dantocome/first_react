@@ -1,15 +1,57 @@
 .img1{
-    width: 130px;
+    width: 100px;
+}
+header{
+    background-color: whitesmoke;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+}.mens{
+    width: 30px;
+}
+.menu{
+    display: flex;
+    padding: 2px;
+}
+h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 5px;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.log{
+    margin-right: 150px;
 }
 nav ul{
     flex: 1;
     text-align: right;
     margin-right: 80px;
 }
+
 nav ul li{
     display: inline-block;
     padding-right: 20px;
-    
+      
+}
+ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+li a:hover{
+    background-color: rgb(246, 232, 206);
+    border-radius: 5px;
 }
 .list{
     display: flex;

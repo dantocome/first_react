@@ -1,15 +1,23 @@
 import React from "react";
 import logo from "./images/logo.webp"
 import "./Home.css"
+import menu from "./images/menu.png"
 
 
 function Home(){
     return(
         <>
         <header>
+            <div className="container">
+            <div className="menu">
+                <img className="mens" src={menu} alt="" />
+                <h5>MENU</h5>
+            </div>
+            <div className="container2">
             <div className="log">
              <img className="img1" src={logo} alt="" />
             </div>
+            <div className="nav">
             <nav>
                 <ul className="list">
                     <div className="home">
@@ -25,6 +33,11 @@ function Home(){
                 </ul>
                 
             </nav>
+            </div>
+
+            </div>
+            </div>
+
         </header>
         </>
     )
