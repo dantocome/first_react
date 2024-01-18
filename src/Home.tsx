@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./images/logo.webp"
 import "./Home.css"
 import menu from "./images/menu.png"
+import Soursop from "./images/Soursop.jpg"
 
 
 function Home(){
@@ -39,12 +40,15 @@ function Home(){
             </div>
 
         </header>
-         <div className="heo">
+         <div className="hero">
            <div className="text">
               <h1>REJUVENATE<br></br> Your Health Through<br></br>
               Quality and Well Tested,<br></br> processed
               Nature Drinks
               </h1>
+           </div>
+           <div className="picture">
+            <img className="sour" src={Soursop} alt="" />
            </div>
          </div>
         </>
