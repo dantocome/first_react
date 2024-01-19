@@ -76,7 +76,11 @@ function Home(){
             <div className="hm">
               <h5 className="add">Home / who we are</h5>
             </div>
-           
+           </section>
+           <section className="foods">
+            <div className="vitnut">
+              <h1 className="nam">NAM VIET FOODS & BEVERAGES</h1>
+            </div>
            </section>
         </>
     )

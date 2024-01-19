@@ -144,3 +144,29 @@ p{
     text-transform: uppercase;
     padding-top: 10px;
 }
+.foods{
+    background-color: white;
+    height: 120px;
+}
+.nam{
+    color: grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    position: relative;
+    padding: 30px 0px;
+    
+}
+.nam::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: gray;
+    bottom: 0;
+    
+    
+    
+}
