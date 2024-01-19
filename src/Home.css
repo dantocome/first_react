@@ -5,6 +5,7 @@ header{
     background-color: whitesmoke;
     top: 0;
     position: sticky;
+    z-index: 1;
 }
 .container{
     display: flex;
@@ -124,6 +125,7 @@ h1{
     text-align: center;
     position: relative;
     font-weight: bold;
+    
 }
 .id::after{
     content: "";
@@ -134,6 +136,7 @@ h1{
     width: 100px;
     height: 5px;
     bottom: 0;
+    
 }
 .hm{
     text-align: center;
@@ -155,10 +158,11 @@ h1{
     position: relative;
     margin-top: 30px;
     padding-bottom: 10px;
+    z-index: -1;
 
 }
 .intro{
-    border: 1px solid red;
+    
 }
 .nam::after{
     content: "";
@@ -237,4 +241,6 @@ h1{
     width: 50px;
     height: 50px;
     margin-top: 10px;
+}
+.who{
 }

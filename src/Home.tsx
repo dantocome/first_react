@@ -75,7 +75,7 @@ function Home(){
 
            <section id="intro">
             <div className="bg">
-            <div className="">
+            <div className="who">
               <h3 className="id">who we are</h3>
             </div>
             <div className="hm">
