@@ -3,6 +3,8 @@
 }
 header{
     background-color: whitesmoke;
+    top: 0;
+    position: sticky;
 }
 .container{
     display: flex;
@@ -109,4 +111,36 @@ p{
     gap: 20px;
     align-items: center;
     padding: 20px;
+}
+.bg{
+    background-image: url(./images/bg-breadcrum-2.jpg);
+    height: 120px;
+    background-size: cover;
+}
+.id{
+    font-family:cursive;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+.id::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    width: 100px;
+    height: 5px;
+    bottom: 0;
+}
+.hm{
+    text-align: center;
+}
+.add{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding-top: 10px;
 }

@@ -24,7 +24,7 @@ function Home(){
                     <div className="home">
                     <li><a href="">Home</a></li>
                     <li><a href="">Services</a></li>
-                    <li><a href="">About us</a></li>
+                    <li><a href="#about">About us</a></li>
                     </div>
                     
                     <div className="bt">
@@ -41,6 +41,7 @@ function Home(){
 
         </header>
           
+          <section>
            <div className="picture">
            <div className="text">
               <h1>REJUVENATE<br></br> Your Health Through<br></br>
@@ -66,6 +67,17 @@ function Home(){
             <img className="sour" src={Soursop} alt="" />
             </div>
            </div>
+           </section>
+
+           <section className="bg">
+            <div className="">
+              <h3 className="id">who we are</h3>
+            </div>
+            <div className="hm">
+              <h5 className="add">Home / who we are</h5>
+            </div>
+           
+           </section>
         </>
     )
 }
