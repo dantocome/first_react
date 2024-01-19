@@ -3,6 +3,10 @@ import logo from "./images/logo.webp"
 import "./Home.css"
 import menu from "./images/menu.png"
 import Soursop from "./images/Soursop.jpg"
+import person1 from "./images/person1.jpg"
+import halal from "./images/halal.webp"
+import person2 from "./images/person2.jpg"
+import person3 from "./images/person3.jpg"
 
 
 function Home(){
@@ -99,6 +103,50 @@ function Home(){
                 <h2 className="test">our testimonials</h2>
 
                </div>
+                  <div className="first">
+                  <div className="woman">
+                    <div className="jons">
+                  <img className="imgb" src={person1} alt="" />
+                  <h5 className="ry">Mary Jons</h5>
+                  </div>
+                  
+                  <p className="lorem">Lorem ipsum, dolor sit amet<br></br> 
+                  Labore, quas similique eius voluptates <br></br>
+                   dolores provident nesciunt aperiam <br></br>
+                  Ad minus vero quasi fugit? impedit <br></br>
+                   </p>
+                   <img className="halal" src={halal} alt="" />
+                  </div>
+                  <div className="woman">
+                    <div className="jons">
+                  <img className="imgb" src={person3} alt="" />
+                  <h5 className="ry">Patra Yung</h5>
+                  </div>
+                  
+                  <p className="lorem">Lorem ipsum, dolor sit amet<br></br> 
+                  Labore, quas similique eius voluptates <br></br>
+                   dolores provident nesciunt aperiam <br></br>
+                  Ad minus vero quasi fugit? impedit <br></br>
+                   </p>
+                   <img className="halal" src={halal} alt="" />
+                  </div>
+                  <div className="woman">
+                    <div className="jons">
+                  <img className="imgb" src={person2} alt="" />
+                  <h5 className="ry">Mark Hills</h5>
+                  </div>
+                  
+                  <p className="lorem">Lorem ipsum, dolor sit amet<br></br> 
+                  Labore, quas similique eius voluptates <br></br>
+                   dolores provident nesciunt aperiam <br></br>
+                  Ad minus vero quasi fugit? impedit <br></br>
+                   </p>
+                   <img className="halal" src={halal} alt="" />
+                  </div>
+                  
+                
+                </div>
+            
            </section>
            
         </>

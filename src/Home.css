@@ -93,7 +93,7 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-p{
+.para{
     text-align: center;
     color: rgb(171, 167, 167);
 }
@@ -195,4 +195,36 @@ p{
     font-family: cursive;
     padding: 3px;
     font-size: 40px;
+}
+.woman{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;  
+    padding: 20px;
+}
+.imgb{
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.first{
+    border: 1px solid red;
+}
+.ry{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 17px;
+}
+.jons{
+    text-align: center;
+}
+.lorem{
+    margin-top: 20px;
+}
+.halal{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
 }
