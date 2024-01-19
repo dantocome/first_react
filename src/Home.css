@@ -200,8 +200,14 @@ h1{
     text-align: center;
     width: 300px;
     height: 300px;
-    border: 1px solid green;  
+    background-color: rgb(248, 243, 243);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(198, 201, 198);
     padding: 20px;
+}
+.woman:hover{
+    transition: transform 2s;
+    transform: translateY(10px);
 }
 .imgb{
     text-align: center;
@@ -210,7 +216,11 @@ h1{
     border-radius: 100%;
 }
 .first{
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .ry{
     font-family: cursive;
