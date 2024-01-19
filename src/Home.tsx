@@ -24,7 +24,7 @@ function Home(){
                     <div className="home">
                     <li><a href="">Home</a></li>
                     <li><a href="">Services</a></li>
-                    <li><a href="#about">About us</a></li>
+                    <li><a href="#intro">About us</a></li>
                     </div>
                     
                     <div className="bt">
@@ -69,19 +69,38 @@ function Home(){
            </div>
            </section>
 
-           <section className="bg">
+           <section id="intro">
+            <div className="bg">
             <div className="">
               <h3 className="id">who we are</h3>
             </div>
             <div className="hm">
               <h5 className="add">Home / who we are</h5>
             </div>
-           </section>
-           <section className="foods">
-            <div className="vitnut">
+            </div>
+            <div className="effect">
+            <div className="foods">
               <h1 className="nam">NAM VIET FOODS & BEVERAGES</h1>
             </div>
+            <div className="hilight">
+              <p className="para">The Nam Viet Foods & Beverage Co., LTD is 100% Vietnamese<br></br> 
+              owned with 25 years of experience in the beverage field for local markets<br></br>
+              and the processing of goods for exporting companies in Vietnam.<br></br>
+              In the second quarter of 2016 the owner of Nam Viet F&B decided<br></br>
+              to expand to markets worldwide and rapidly conquer the trust of our<br></br>
+              clients from the first order through quality control,<br></br>
+              fast delivery and most importantly our main goal to service<br></br>
+              client accounts after sale and client satisfaction.</p>
+            </div>
+            </div>
            </section>
+           <section className="testimonials">
+               <div className="testify">
+                <h2 className="test">our testimonials</h2>
+
+               </div>
+           </section>
+           
         </>
     )
 }

@@ -145,8 +145,7 @@ p{
     padding-top: 10px;
 }
 .foods{
-    background-color: white;
-    height: 120px;
+    height: 50px;
 }
 .nam{
     color: grey;
@@ -154,11 +153,12 @@ p{
     font-size: 20px;
     font-weight:bolder;
     position: relative;
-    padding-top: 50px;
+    margin-top: 30px;
     padding-bottom: 10px;
-    
 
-    
+}
+.intro{
+    border: 1px solid red;
 }
 .nam::after{
     content: "";
@@ -169,8 +169,30 @@ p{
     height: 2px;
     background-color: rgb(206, 204, 204);
     bottom: 0;
-    
-    
-    
-    
+
+}
+.para{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.effect:hover{
+    background-color: rgb(230, 229, 229);
+    transition: transform 0.5s;
+    transform: translateX(5px);
+
+}
+.testify{
+    background-image: url(./images/organic-icecream-row-bg.jpg);
+    height: 100px;
+    background-size: cover;
+}
+.testimonials{
+    margin-top: 20px;
+}
+.test{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    padding: 3px;
+    font-size: 40px;
 }
