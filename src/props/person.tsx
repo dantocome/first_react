@@ -1,6 +1,7 @@
 
 import React from "react";
 
+
 function Person(props){
     return(
         <>
@@ -16,3 +17,5 @@ function Person(props){
     )
 }
 export default Person;
+
+
