@@ -27,7 +27,7 @@ function Home(){
                 <ul className="list">
                     <div className="home">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="Home2.tsx">Services</a></li>
                     <li><a href="#intro">About us</a></li>
                     </div>
                     
@@ -52,7 +52,7 @@ function Home(){
               Quality and Well Tested,<br></br> processed
               Nature Drinks
               </h1>
-              <p>Look out for some of our vacinating health nuggets:<br></br>
+              <p className="para2">Look out for some of our vacinating health nuggets:<br></br>
               Leveragin on great testimonials across the globe.</p>
               <div className="nug">
               <div className="nug1">

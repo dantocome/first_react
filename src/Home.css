@@ -98,6 +98,12 @@ h1{
     text-align: center;
     color: rgb(171, 167, 167);
 }
+.para2{
+    font-family: cursive;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+}
 .nug1{
     background:linear-gradient(to right, green, yellow);
     height: 33px;
