@@ -7,11 +7,15 @@ import Authenticate from "./user/Login"
 import Home from "./Home"
 import Home2 from "./Home2"
 import Validate from "./Users"
+import Person from "./props/person"
 
 
 function App() {
  return(
   <>
+   <Person name="Obi" age={14}/>
+   <Person name="Amaka" age={34} manager = "yes"/>
+   <Person name="Daniel" age={24} manager = "yes"/>
   {/* <MyHeader/> */}
   {/* <Welcome/> */}
   {/* <MyHeader/> */}
@@ -20,8 +24,8 @@ function App() {
   {/* <Authenticate/>  */}
    {/* <Home/>  */}
    {/* <Home2/> */}
-   <Validate/>
-   
+   {/* <Validate/> */}
+  
  </>
  )
 }
