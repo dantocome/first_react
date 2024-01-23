@@ -14,7 +14,7 @@ function States(){
       <ul>
         {states.length===0 && <p>list not found</p>}
      {states.map((state, index)=>(
-        <li>{state} {index}</li>
+        <li >{state} {index}</li>
      ))}
       </ul>
       
