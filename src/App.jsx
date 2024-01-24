@@ -11,13 +11,15 @@ import Person from "./props/person"
 import Cars from "./props/cars"
 import Counter from "./myState/Counter"
 import Lightstate from "./myState/Ison"
+import InputForm from "./myState/Input"
 
 
 function App() {
  return(
   <>
-  <Counter/>
-  <Lightstate/>
+  <InputForm/>
+  {/* <Counter/>
+  <Lightstate/> */}
   {/* <Cars carname="venza" color="red" brand={2023}/>
    <Person name="Obi" age={14}/>
    <Person name="Amaka" age={34} manager = "yes"/>
