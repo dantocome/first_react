@@ -11,6 +11,9 @@ function InputForm(){
     const handleSubmit = (e)=>{
         e.preventDefault();
         setSubmittedValue(InputValue);
+
+        // console.log(submittedValue);
+        
        
     }
     return(

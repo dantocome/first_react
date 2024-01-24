@@ -17,9 +17,9 @@ import InputForm from "./myState/Input"
 function App() {
  return(
   <>
-  <InputForm/>
+    <Lightstate/> 
+  {/* <InputForm/> */}
   {/* <Counter/>
-  <Lightstate/> */}
   {/* <Cars carname="venza" color="red" brand={2023}/>
    <Person name="Obi" age={14}/>
    <Person name="Amaka" age={34} manager = "yes"/>
