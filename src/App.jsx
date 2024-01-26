@@ -14,16 +14,29 @@ import Lightstate from "./myState/Ison"
 import InputForm from "./myState/Input"
 import LoginRef from "./myState/LoginRef"
 import ContactHook from "./myState/ContactHook"
+import Heading from "./Component/Heading"
 
 
 function App() {
  return(
   <>
-  <ContactHook/>
+  <div className="App">
+
+  <Heading/>
+    
+  
+
+
+
+
+
+
+
+  {/* <ContactHook/> */}
   {/* <LoginRef/> */}
   {/* <Lightstate/>  */}
   {/* <InputForm/> */}
-  {/* <Counter/>
+  {/* <Counter/>}
   {/* <Cars carname="venza" color="red" brand={2023}/>
    <Person name="Obi" age={14}/>
    <Person name="Amaka" age={34} manager = "yes"/>
@@ -37,6 +50,7 @@ function App() {
    {/* <Home/>  */}
    {/* <Home2/> */}
    {/* <Validate/> */}
+   </div>
   
  </>
  )
