@@ -4,7 +4,9 @@ import "./App.css";
 const Heading = () => {
   return (
     <>
+    <div className="heading">
     <h2>ReactJs Budget App</h2>
+    </div>
     </>
       
     
