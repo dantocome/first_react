@@ -23,7 +23,7 @@ function App() {
   <>
   <div className="App">
 
-  <Heading/>
+  {/* <Heading/> */}
     
   
 
@@ -48,7 +48,7 @@ function App() {
   {/* <Maincontent/> */}
    {/* <States/> */}
   {/* <Authenticate/>  */}
-   {/* <Home/>  */}
+   <Home/> 
    {/* <Home2/> */}
    {/* <Validate/> */}
    </div>
