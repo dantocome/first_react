@@ -74,6 +74,11 @@ const handleSubmit = (event)=>{
 
     </form>
     </div>
+    <div className="footer">
+      <div className="emeks">
+        <div className="h3">EMEKSMAN NIG LTD</div>
+      </div>
+    </div>
     </div>
     </>
   )
