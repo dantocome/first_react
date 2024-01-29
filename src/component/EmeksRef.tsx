@@ -18,7 +18,7 @@ const handleSubmit = (event)=>{
   return (
     <>
     <div className="container">
-        
+        <div className="wrap">
         <div className="header">
             <h5>Loan management system</h5>
         </div>
@@ -30,11 +30,14 @@ const handleSubmit = (event)=>{
              <li>LogOut</li>
             </ul>
         </div>
+        </div>
 
     
     <div className="main">
     <form >
-   
+          <div className="application">
+            <h3>Loan Application Form</h3>
+          </div>
         <div className="for">
             <div className="form-one-end">
             <div className="form-one">
