@@ -22,6 +22,14 @@ const handleSubmit = (event)=>{
         <div className="header">
             <h5>Loan management system</h5>
         </div>
+        <div className="menu">
+            <ul>
+             <li>Home</li>
+             <li>Register</li>
+             <span><li>Loan Management</li></span>
+             <li>LogOut</li>
+            </ul>
+        </div>
 
     
     <div className="main">
