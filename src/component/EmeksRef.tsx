@@ -41,31 +41,31 @@ const handleSubmit = (event)=>{
         <div className="for">
             <div className="form-one-end">
             <div className="form-one">
-            <label htmlFor="">Loan Payment Start Date</label><br></br>
+            <label htmlFor="" className='name'>Loan Payment Start Date</label><br></br>
             <input type="text" />
             </div>
             <div className="form-one">
-            <label htmlFor="">Loan Aount</label><br></br>
-            <input type="text" />
-            </div>
-            </div>
-            <div className="form-one-end">
-            <div className="form-one">
-            <label htmlFor="">Loan Payment End Date</label><br></br>
-            <input type="text" />
-            </div>
-            <div className="form-one">
-            <label htmlFor="">Loan Rate</label><br></br>
+            <label htmlFor="" className='name'>Loan Aount</label><br></br>
             <input type="text" />
             </div>
             </div>
             <div className="form-one-end">
             <div className="form-one">
-            <label htmlFor="">Number of Months</label><br></br>
+            <label htmlFor="" className='name'>Loan Payment End Date</label><br></br>
             <input type="text" />
             </div>
             <div className="form-one">
-            <label htmlFor="">Name of Borrower</label><br></br>
+            <label htmlFor="" className='name'>Loan Rate</label><br></br>
+            <input type="text" />
+            </div>
+            </div>
+            <div className="form-one-end">
+            <div className="form-one">
+            <label htmlFor="" className='name'>Number of Months</label><br></br>
+            <input type="text" />
+            </div>
+            <div className="form-one">
+            <label htmlFor="" className='name'>Name of Borrower</label><br></br>
             <select name="" id=""> <option value=""><input type="text" /></option></select>
            
             </div>
