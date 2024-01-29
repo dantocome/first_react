@@ -88,6 +88,10 @@ input[type="text"]{
     color: white;
     padding: 10px;
 }
+select[name="text"]{
+    width: 300px;
+    height: 25px;
+}
 /* .content{
     min-height: calc(80vh - 130px);
 }
