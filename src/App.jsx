@@ -14,25 +14,14 @@ import Lightstate from "./myState/Ison"
 import InputForm from "./myState/Input"
 import LoginRef from "./myState/LoginRef"
 import ContactHook from "./myState/ContactHook"
-import Heading from "./Component/Heading"
+import EmeksRef from "./component/EmeksRef"
 
 
 
 function App() {
  return(
   <>
-  <div className="App">
-
-  {/* <Heading/> */}
-    
-  
-
-
-
-
-
-
-
+  <EmeksRef/>
   {/* <ContactHook/> */}
   {/* <LoginRef/> */}
   {/* <Lightstate/>  */}
@@ -48,10 +37,10 @@ function App() {
   {/* <Maincontent/> */}
    {/* <States/> */}
   {/* <Authenticate/>  */}
-   <Home/> 
+   {/* <Home/>  */}
    {/* <Home2/> */}
    {/* <Validate/> */}
-   </div>
+  
   
  </>
  )
