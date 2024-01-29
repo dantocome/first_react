@@ -16,8 +16,18 @@ const handleSubmit = (event)=>{
 }
 
   return (
+    <>
+    <div className="container">
+        
+        <div className="header">
+            <h2>Loan Management System</h2>
+        </div>
+
+    
+    <div className="main">
     <form >
-        <div className="form">
+   
+        <div className="for">
             <div className="form-one-end">
             <div className="form-one">
             <label htmlFor="">Loan Payment Start Date</label><br></br>
@@ -52,6 +62,9 @@ const handleSubmit = (event)=>{
         </div>
 
     </form>
+    </div>
+    </div>
+    </>
   )
 }
 
