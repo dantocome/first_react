@@ -20,7 +20,7 @@ const handleSubmit = (event)=>{
     <div className="container">
         
         <div className="header">
-            <h2>Loan Management System</h2>
+            <h5>Loan management system</h5>
         </div>
 
     
