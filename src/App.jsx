@@ -15,14 +15,25 @@ import InputForm from "./myState/Input"
 import LoginRef from "./myState/LoginRef"
 import ContactHook from "./myState/ContactHook"
 import EmeksRef from "./component/EmeksRef"
+import Heading from "./container/Heading"
+import Hero from "./container/Hero"
+import Footer from "./container/Footer"
+
 
 
 
 function App() {
  return(
   <>
-  
-  <EmeksRef/>
+  <div className="App">
+
+    <Heading/>
+    <div className="content">
+      <Hero/>
+    </div>
+    <Footer/>
+    
+  {/* <EmeksRef/> */}
   {/* <ContactHook/> */}
   {/* <LoginRef/> */}
   {/* <Lightstate/>  */}
@@ -41,7 +52,7 @@ function App() {
    {/* <Home/>  */}
    {/* <Home2/> */}
    {/* <Validate/> */}
-  
+  </div>
   
  </>
  )

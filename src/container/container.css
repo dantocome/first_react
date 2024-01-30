@@ -1,0 +1,31 @@
+h1{
+    color: blue;
+}
+.App{
+    background-color: rgb(235, 231, 231);
+    height: 100vh;
+}
+header{
+    background-color: rgb(241, 132, 93);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer{
+    background-color: rgb(241, 132, 93);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    min-height: calc(100vh - 160px);
+}
+h3{
+    color: royalblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}

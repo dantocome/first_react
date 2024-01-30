@@ -8,7 +8,7 @@ const enddateRef = useRef("");
 const rateRef = useRef("");
 const monthsRef = useRef("");
 const nameRef = useRef("");
-const users = {paymentstartdate:"", amount:"", enddate:"", rate:"", months:"", name:"",}
+const users = {paymentstartdate:"", amount:"", enddate:"", rate:"", months:"", nameofborrower:"",}
 
 const handleSubmit = (event)=>{
     event.preventDefault();
@@ -29,7 +29,7 @@ const handleSubmit = (event)=>{
       users.months = monthsRef.current.value;
     }
     if(nameRef.current !==null){
-      users.name = nameRef.current.value;
+      users.nameofborrower = nameRef.current.value;
     }
     console.log(users);
     
@@ -80,18 +80,18 @@ const handleSubmit = (event)=>{
             </div>
             <div className="form-one">
             <label htmlFor="loan rate" className='name'>Loan Rate</label><br></br>
-            <input id='number' type="text" ref={rateRef}/>
+            <input id='%' type="text" ref={rateRef}/>
             </div>
             </div>
             <div className="form-one-end">
             <div className="form-one">
             <label htmlFor="number of months" className='name'>Number of Months</label><br></br>
-            <input id='number' type="text" ref={monthsRef}/>
+            <input id='text' type="text" ref={monthsRef}/>
             </div>
             <div className="form-one">
-            <label htmlFor="name of borrower" className='name'>Name of Borrower</label><br></br>
+            <label htmlFor="" className='name'>Name of Borrower</label><br></br>
             <select name="text" id="name">
-            <input type="text"  placeholder='select customers name' ref={nameRef}/>
+            <input  id ="name of borrower" type="text"  placeholder='select customers name' ref={nameRef}/>
               <option value="">select customers name</option>
               <option value="">David Clark</option>
             </select>
