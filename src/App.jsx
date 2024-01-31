@@ -32,7 +32,7 @@ function App() {
       <div className="box-wrapper">
         <div className="box-expense">
         <GiPayMoney size={100} color="red"/>
-        <p>Expense</p>
+        <p>Add Expense</p>
         </div>
         <div className="box-income">
         <GiReceiveMoney size={100} color="green"/>

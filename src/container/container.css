@@ -39,7 +39,7 @@ h1{
     justify-content: center;
     width: 100%;
 }
-.box-expense{
+.box-expense, .box-income{
     border: 1px solid #dedede;
     width: 250px;
     height: 250px;
@@ -47,4 +47,8 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
