@@ -1,12 +1,13 @@
 h1{
-    color: blue;
+    color: rgb(170, 170, 234);
+    font-weight: bolder;
 }
 .App{
     background-color: rgb(235, 231, 231);
     height: 100vh;
 }
 header{
-    background-color: rgb(241, 132, 93);
+    background-color: rgb(219, 217, 217);
     height: 80px;
     width: 100%;
     display: flex;
@@ -14,15 +15,17 @@ header{
     justify-content: center;
 }
 .Footer{
-    background-color: rgb(241, 132, 93);
-    height: 80px;
+    background-color: rgb(18, 17, 17);
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-family:cursive;
 }
 .content{
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 113px);
 }
 h3{
     color: royalblue;
