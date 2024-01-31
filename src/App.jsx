@@ -18,27 +18,34 @@ import EmeksRef from "./component/EmeksRef"
 import Heading from "./container/Heading"
 import Hero from "./container/Hero"
 import Footer from "./container/Footer"
+import Modal from "./container/Modal"
+import { useState } from "react"
 import {GiPayMoney, GiReceiveMoney} from "react-icons/gi"
 
 
 
 function App() {
+  const [isModalopen, setisModalopen] = useState(false);
+
+
  return(
   <>
   <div className="App">
 
     <Heading/>
+    {isModalopen && <Modal/>}
     <div className="content">
       <div className="box-wrapper">
-        <div className="box-expense">
+        <div className="box-expense" onClick={()=>setisModalopen(true)}>
         <GiPayMoney size={100} color="red"/>
         <p>Add Expense</p>
         </div>
-        <div className="box-income">
+        <div className="box-income" onClick={()=>setisModalopen(true)}>
         <GiReceiveMoney size={100} color="green"/>
         <p>Add Income</p>
         </div>
       </div>
+      {/* <Modal/> */}
     </div>
     <Footer/>
     
