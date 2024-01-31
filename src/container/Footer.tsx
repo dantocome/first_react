@@ -4,7 +4,7 @@ import "./container.css"
 const Footer = () => {
   return (
     <div className='Footer'>
-      <p>Reactjs Budget App &copy;</p>
+      <p>Reactjs Budget App &copy; 2024</p>
     </div>
   )
 }

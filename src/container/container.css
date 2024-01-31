@@ -1,14 +1,15 @@
-h1{
-    color: rgb(170, 170, 234);
-    font-weight: bolder;
-}
+
 .App{
-    background-color: rgb(235, 231, 231);
+    background-color: rgb(250, 248, 248);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 header{
     background-color: rgb(219, 217, 217);
-    height: 80px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -25,10 +26,25 @@ header{
     font-family:cursive;
 }
 .content{
-    min-height: calc(100vh - 113px);
+    min-height: calc(100vh - 100px);
+    width: 100%;
 }
-h3{
-    color: royalblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+h1{
+    color: green;
+}
+.box-wrapper{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.box-expense{
+    border: 1px solid #dedede;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

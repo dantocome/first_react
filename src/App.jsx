@@ -18,7 +18,7 @@ import EmeksRef from "./component/EmeksRef"
 import Heading from "./container/Heading"
 import Hero from "./container/Hero"
 import Footer from "./container/Footer"
-
+import {GiPayMoney, GiReceiveMoney} from "react-icons/gi"
 
 
 
@@ -29,7 +29,16 @@ function App() {
 
     <Heading/>
     <div className="content">
-      <Hero/>
+      <div className="box-wrapper">
+        <div className="box-expense">
+        <GiPayMoney size={100} color="red"/>
+        <p>Expense</p>
+        </div>
+        <div className="box-income">
+        <GiReceiveMoney size={100} color="green"/>
+        <p>Add Income</p>
+        </div>
+      </div>
     </div>
     <Footer/>
     
