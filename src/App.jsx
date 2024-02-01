@@ -33,7 +33,7 @@ function App() {
   <div className="App">
 
     <Heading/>
-    {isModalOpen && <Modal/>}
+    {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen}/>}
     <div className="content">
       <div className="box-wrapper">
         <div className="box-expense" onClick={()=>setIsModalOpen(true)}>
