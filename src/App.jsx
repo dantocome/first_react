@@ -29,7 +29,7 @@ function App() {
 
 
  return(
-  <>
+
   <div className="App">
 
     <Heading/>
@@ -70,7 +70,7 @@ function App() {
    {/* <Validate/> */}
   </div>
   
- </>
+ 
  )
 }
 
