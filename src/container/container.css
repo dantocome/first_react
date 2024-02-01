@@ -81,6 +81,7 @@ h1{
     background-color: white;
     border-radius: 10px;
     border: 1px solid #980e0e;
+    position: relative;
 }
 .modal > h4{
     margin-bottom: 10px;
@@ -88,7 +89,23 @@ h1{
 }
 .modal > input{
   width: 85%;
-  height: 20px;
-  margin: 10px;
+  height: 25px;
+  margin: 5px;
+  border: 1.4px solid gray;
+  border-radius: 3px;
   
+}
+.modal >Button{
+    background-color: black;
+    width: 85%;
+    color: white;
+    height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.modal-close-icon{
+    position: absolute;
+    top: 5px;
+    right: 5px ;
 }

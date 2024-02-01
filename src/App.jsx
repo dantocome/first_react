@@ -25,7 +25,7 @@ import {GiPayMoney, GiReceiveMoney} from "react-icons/gi"
 
 
 function App() {
-  const [isModalopen, setisModalopen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
 
  return(
@@ -33,14 +33,14 @@ function App() {
   <div className="App">
 
     <Heading/>
-    {isModalopen && <Modal/>}
+    {isModalOpen && <Modal/>}
     <div className="content">
       <div className="box-wrapper">
-        <div className="box-expense" onClick={()=>setisModalopen(true)}>
+        <div className="box-expense" onClick={()=>setIsModalOpen(true)}>
         <GiPayMoney size={100} color="red"/>
         <p>Add Expense</p>
         </div>
-        <div className="box-income" onClick={()=>setisModalopen(true)}>
+        <div className="box-income" onClick={()=>setIsModalOpen(true)}>
         <GiReceiveMoney size={100} color="green"/>
         <p>Add Income</p>
         </div>
