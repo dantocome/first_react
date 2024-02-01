@@ -26,21 +26,33 @@ import {GiPayMoney, GiReceiveMoney} from "react-icons/gi"
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalRequestType, setmodalRequestType] = useState("");
 
+  const onExpenseBoxClick = ()=>{
+    setIsModalOpen(true);
+    setmodalRequestType("expense")
+
+  }
+  const onIncomeBoxClick = ()=>{
+    setIsModalOpen(true);
+    setmodalRequestType("income")
+
+  }
 
  return(
 
   <div className="App">
 
     <Heading/>
-    {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen}/>}
+    {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen} 
+    modalRequestTtype = {modalRequestType}/>}
     <div className="content">
       <div className="box-wrapper">
-        <div className="box-expense" onClick={()=>setIsModalOpen(true)}>
+        <div className="box-expense" onClick={onExpenseBoxClick}>
         <GiPayMoney size={100} color="red"/>
         <p>Add Expense</p>
         </div>
-        <div className="box-income" onClick={()=>setIsModalOpen(true)}>
+        <div className="box-income" onClick={onIncomeBoxClick}>
         <GiReceiveMoney size={100} color="green"/>
         <p>Add Income</p>
         </div>
