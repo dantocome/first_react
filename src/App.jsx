@@ -21,31 +21,85 @@ import Footer from "./container/Footer"
 import Modal from "./container/Modal"
 import { useState } from "react"
 import {GiPayMoney, GiReceiveMoney} from "react-icons/gi"
+import Getupdate from "./Update/Getupdate"
+
 
 
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalRequestType, setmodalRequestType] = useState("");
 
-  const onExpenseBoxClick = ()=>{
-    setIsModalOpen(true);
-    setmodalRequestType("expense")
+const [isUpdateOpen, setIsUpdateOpen] = useState(false);
+const [UpdateRequestType, setUpdateRequestType] = useState("");
 
-  }
-  const onIncomeBoxClick = ()=>{
-    setIsModalOpen(true);
-    setmodalRequestType("income")
+const UpdatenewsoneRequestBox = ()=>{
+  setIsUpdateOpen(true);
+  setUpdateRequestType("one")
+}
 
-  }
+const UpdatenewstwoRequestBox = ()=>{
+  setIsUpdateOpen(true);
+  setUpdateRequestType("two");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [modalRequestType, setmodalRequestType] = useState("");
+
+  // const onExpenseBoxClick = ()=>{
+  //   setIsModalOpen(true);
+  //   setmodalRequestType("expense")
+
+  // }
+  // const onIncomeBoxClick = ()=>{
+  //   setIsModalOpen(true);
+  //   setmodalRequestType("income")
+
+  // }
 
  return(
 
   <div className="App">
+{isUpdateOpen && <Getupdate setIsUpdateOpen ={setIsUpdateOpen} 
+   UpdateRequestType = {UpdateRequestType}/>}
+  
+  <div className="Getnews">
+    <div className="news">
+    <div className="news-one" onClick={UpdatenewsoneRequestBox}>
+    <h3 className="each-day">News-one </h3>
+    </div>
+    <div className="news-one" onClick={UpdatenewstwoRequestBox}>
+    <h3 className="each-day">News-two</h3>
+    </div>
+    </div>
+  </div>
 
-    <Heading/>
+
+
+
+
+
+
+
+
+
+
+
+
+    {/* <Heading/>
     {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen} 
-    modalRequestTtype = {modalRequestType}/>}
+    modalRequestType = {modalRequestType}/>}
     <div className="content">
       <div className="box-wrapper">
         <div className="box-expense" onClick={onExpenseBoxClick}>
@@ -57,10 +111,9 @@ function App() {
         <p>Add Income</p>
         </div>
       </div>
-      {/* <Modal/> */}
     </div>
     <Footer/>
-    
+     */}
   {/* <EmeksRef/> */}
   {/* <ContactHook/> */}
   {/* <LoginRef/> */}
