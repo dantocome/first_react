@@ -112,8 +112,8 @@ const UpdatenewstwoRequestBox = ()=>{
         </div>
       </div>
     </div>
-    <Footer/>
-     */}
+    <Footer/> */}
+    
   {/* <EmeksRef/> */}
   {/* <ContactHook/> */}
   {/* <LoginRef/> */}

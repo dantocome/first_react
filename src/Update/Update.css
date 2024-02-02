@@ -6,7 +6,7 @@
     width: 500px;
     height: 300px;
     border: 1px solid red;
-    position: relative;
+    position: absolute;
 
 }
 .news{
@@ -18,7 +18,8 @@
     
 }
 .Update{
-    position: absolute;
+    position: relative;
+    border: 1px solid green;
 }
 .each-day{
     text-transform: lowercase;

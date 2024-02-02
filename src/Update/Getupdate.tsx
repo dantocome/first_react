@@ -3,16 +3,17 @@ import "./Update.css"
 
 const Getupdate = ({setIsUpdateOpen, UpdateRequestType}) => {
   return (
-    <div className='Update'>
-        <div className="update-one">
+    <div className='Gatenews'>
+        <div className="Update">
             <h2>{UpdateRequestType==="one"? "News-one": "News-two"}</h2>
             <p>Lorem ipsum dolor sit amet<br></br> 
                consectetur adipisicing elit.<br></br>
                consectetur adipisicing elit.
+
             </p>
-            <button>Dismiss</button>
-        </div>
-      
+             <button onClick={() => setIsUpdateOpen(false)}>Button</button>
+            </div>
+           
     </div>
   )
 }
