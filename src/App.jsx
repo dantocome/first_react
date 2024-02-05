@@ -21,42 +21,16 @@ import Footer from "./container/Footer"
 import Modal from "./container/Modal"
 import { useState } from "react"
 import {GiPayMoney, GiReceiveMoney} from "react-icons/gi"
-import Getupdate from "./Update/Getupdate"
+import uniqid from "uniqid" 
 
 
 
 
 function App() {
 
-// const [isUpdateOpen, setIsUpdateOpen] = useState(false);
-// const [UpdateRequestType, setUpdateRequestType] = useState("");
-
-// const UpdatenewsoneRequestBox = ()=>{
-//   setIsUpdateOpen(true);
-//   setUpdateRequestType("one")
-// }
-
-// const UpdatenewstwoRequestBox = ()=>{
-//   setIsUpdateOpen(true);
-//   setUpdateRequestType("two");
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalRequestType, setmodalRequestType] = useState("");
-  const [expense, setExpense] = useState([]);
+  const [expenses, setExpenses] = useState([]);
   const [incomes, setIncomes] = useState([]);
 
 
@@ -72,41 +46,25 @@ function App() {
   }
 
   const onAddExpenseHandler = (description, amount)=>{
-      alert("Expense method has been called")
+      const oldExpenses = [...expenses];
+
+      const newExpense = {
+        id: uniqid(),
+        type: "expenses",
+        amount: amount,
+        description: description,
+      }
+      const newExpenses = oldExpenses.concat(newExpense);
+      setExpenses(newExpenses);
   }
   const onAddIncomeHandler = (description, amount)=>{
       alert(" Income method has been called")
   }
+  console.log(expenses);
 
  return(
 
   <div className="App">
-{/* {isUpdateOpen && <Getupdate setIsUpdateOpen ={setIsUpdateOpen} 
-   UpdateRequestType = {UpdateRequestType}/>}
-  
-  <div className="Getnews">
-    <div className="news">
-    <div className="news-one" onClick={UpdatenewsoneRequestBox}>
-    <h3 className="each-day">News-one </h3>
-    </div>
-    <div className="news-one" onClick={UpdatenewstwoRequestBox}>
-    <h3 className="each-day">News-two</h3>
-    </div>
-    </div>
-  </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
     <Heading/>
     {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen} 
     modalRequestType = {modalRequestType} 

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import React from 'react'
+import React, { useState } from 'react'
 import "./container.css"
 import { IoCloseCircleSharp } from "react-icons/io5";
 
@@ -14,7 +13,7 @@ const Modal = ({setIsModalOpen, modalRequestType,
       return;
     }
     if(modalRequestType==="expense"){
-      onAddExpenseHandler();
+      onAddExpenseHandler(description, amount);
     }
     if(modalRequestType==="income"){
       onAddIncomeHandler();
