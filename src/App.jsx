@@ -28,20 +28,18 @@ import Getupdate from "./Update/Getupdate"
 
 function App() {
 
-const [isUpdateOpen, setIsUpdateOpen] = useState(false);
-const [UpdateRequestType, setUpdateRequestType] = useState("");
+// const [isUpdateOpen, setIsUpdateOpen] = useState(false);
+// const [UpdateRequestType, setUpdateRequestType] = useState("");
 
-const UpdatenewsoneRequestBox = ()=>{
-  setIsUpdateOpen(true);
-  setUpdateRequestType("one")
-}
+// const UpdatenewsoneRequestBox = ()=>{
+//   setIsUpdateOpen(true);
+//   setUpdateRequestType("one")
+// }
 
-const UpdatenewstwoRequestBox = ()=>{
-  setIsUpdateOpen(true);
-  setUpdateRequestType("two");
-}
-
-
+// const UpdatenewstwoRequestBox = ()=>{
+//   setIsUpdateOpen(true);
+//   setUpdateRequestType("two");
+// }
 
 
 
@@ -54,24 +52,36 @@ const UpdatenewstwoRequestBox = ()=>{
 
 
 
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // const [modalRequestType, setmodalRequestType] = useState("");
 
-  // const onExpenseBoxClick = ()=>{
-  //   setIsModalOpen(true);
-  //   setmodalRequestType("expense")
 
-  // }
-  // const onIncomeBoxClick = ()=>{
-  //   setIsModalOpen(true);
-  //   setmodalRequestType("income")
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalRequestType, setmodalRequestType] = useState("");
+  const [expense, setExpense] = useState([]);
+  const [incomes, setIncomes] = useState([]);
 
-  // }
+
+  const onExpenseBoxClick = ()=>{
+    setIsModalOpen(true);
+    setmodalRequestType("expense")
+
+  }
+  const onIncomeBoxClick = ()=>{
+    setIsModalOpen(true);
+    setmodalRequestType("income")
+
+  }
+
+  const addExpenseHandler = (description, amount)=>{
+
+  }
+  const addIncomeHandler = (description, amount)=>{
+
+  }
 
  return(
 
   <div className="App">
-{isUpdateOpen && <Getupdate setIsUpdateOpen ={setIsUpdateOpen} 
+{/* {isUpdateOpen && <Getupdate setIsUpdateOpen ={setIsUpdateOpen} 
    UpdateRequestType = {UpdateRequestType}/>}
   
   <div className="Getnews">
@@ -83,7 +93,7 @@ const UpdatenewstwoRequestBox = ()=>{
     <h3 className="each-day">News-two</h3>
     </div>
     </div>
-  </div>
+  </div> */}
 
 
 
@@ -97,7 +107,7 @@ const UpdatenewstwoRequestBox = ()=>{
 
 
 
-    {/* <Heading/>
+    <Heading/>
     {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen} 
     modalRequestType = {modalRequestType}/>}
     <div className="content">
@@ -112,7 +122,7 @@ const UpdatenewstwoRequestBox = ()=>{
         </div>
       </div>
     </div>
-    <Footer/> */}
+    <Footer/>
     
   {/* <EmeksRef/> */}
   {/* <ContactHook/> */}

@@ -82,6 +82,7 @@ h1{
     border-radius: 10px;
     border: 1px solid #980e0e;
     position: relative;
+    
 }
 .modal > h4{
     margin-bottom: 10px;
@@ -93,6 +94,7 @@ h1{
   margin: 5px;
   border: 1.4px solid gray;
   border-radius: 3px;
+  
   
 }
 .modal >Button{
