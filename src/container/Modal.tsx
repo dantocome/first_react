@@ -3,10 +3,23 @@ import React from 'react'
 import "./container.css"
 import { IoCloseCircleSharp } from "react-icons/io5";
 
-const Modal = ({setIsModalOpen, modalRequestType}) => {
+const Modal = ({setIsModalOpen, modalRequestType, 
+  onAddExpenseHandler, onAddIncomeHandler}) => {
 
   const[description, setDescription] = useState("");
   const[amount, setAmount] = useState("");
+
+  const onButtonClick = ()=>{
+    if(!description || !amount){
+      return;
+    }
+    if(modalRequestType==="expense"){
+      onAddExpenseHandler();
+    }
+    if(modalRequestType==="income"){
+      onAddIncomeHandler();
+    }
+  };
 
   return (
     <div className='modal-overlay'>
@@ -18,7 +31,7 @@ const Modal = ({setIsModalOpen, modalRequestType}) => {
             onChange={(e)=> setDescription(e.target.value)}/>
             <input type="text"  placeholder='Amount' value={amount}
              onChange={(e)=>setAmount(e.target.value)}/>
-            <button>Button</button>
+            <button onClick={onButtonClick}>Button</button>
             
         </div>
       

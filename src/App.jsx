@@ -71,11 +71,11 @@ function App() {
 
   }
 
-  const addExpenseHandler = (description, amount)=>{
-
+  const onAddExpenseHandler = (description, amount)=>{
+      alert("Expense method has been called")
   }
-  const addIncomeHandler = (description, amount)=>{
-
+  const onAddIncomeHandler = (description, amount)=>{
+      alert(" Income method has been called")
   }
 
  return(
@@ -109,7 +109,10 @@ function App() {
 
     <Heading/>
     {isModalOpen && <Modal setIsModalOpen = {setIsModalOpen} 
-    modalRequestType = {modalRequestType}/>}
+    modalRequestType = {modalRequestType} 
+    onAddExpenseHandler ={onAddExpenseHandler}
+    onAddIncomeHandler ={onAddIncomeHandler}/>}
+
     <div className="content">
       <div className="box-wrapper">
         <div className="box-expense" onClick={onExpenseBoxClick}>
