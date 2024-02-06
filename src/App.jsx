@@ -98,17 +98,27 @@ function App() {
           <div
            key={transaction.id} 
            style={{
-            width:"100%",
-            height: "50px",
+            width:"40%",
+            height: "40px",
             background: transaction.type === "expense" ? "red":"green",
             display:"flex",
             alignItems:"center",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
+            color: "white",
+            fontSize:"25px",
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            fontFamily: "cursive",
+            borderRadius: "10px",
+            
+            
 
           }}
           >
+            
             <div>{transaction.description}</div>
             <div>{transaction.amount}</div>
+          
           </div>
         ))}
       </div>
