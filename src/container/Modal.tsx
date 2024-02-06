@@ -16,14 +16,15 @@ const Modal = ({setIsModalOpen, modalRequestType,
       onAddExpenseHandler(description, amount);
     }
     if(modalRequestType==="income"){
-      onAddIncomeHandler();
+      onAddIncomeHandler(description, amount);
     }
+    setIsModalOpen(false);
   };
 
   return (
     <div className='modal-overlay'>
         <div className="modal">
-           <IoCloseCircleSharp size={20} color='black' className='modal-close-icon' 
+           <IoCloseCircleSharp size={25} color='black' className='modal-close-icon' 
            onClick={() => setIsModalOpen(false)}/>
             <h4>{modalRequestType==="expense" ? "Add Expense": "Add Income"}</h4>
             <input type="text" placeholder='description' value={description} 

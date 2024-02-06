@@ -111,3 +111,10 @@ h1{
     top: 5px;
     right: 5px ;
 }
+.transactions-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

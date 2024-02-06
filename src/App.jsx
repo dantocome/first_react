@@ -50,7 +50,7 @@ function App() {
 
       const newExpense = {
         id: uniqid(),
-        type: "expenses",
+        type: "expense",
         amount: amount,
         description: description,
       }
@@ -58,9 +58,20 @@ function App() {
       setExpenses(newExpenses);
   }
   const onAddIncomeHandler = (description, amount)=>{
-      alert(" Income method has been called")
+    const oldIncomes = [...incomes];
+
+    const newIncome = {
+      id: uniqid(),
+      type: "income",
+      amount: amount,
+      description: description,
+    }
+
+    const newIncomes = oldIncomes.concat(newIncome);
+    setIncomes(newIncomes);
   }
-  console.log(expenses);
+  const transactions = [...expenses, ...incomes];
+  console.log("transactions", transactions);
 
  return(
 
@@ -81,6 +92,25 @@ function App() {
         <GiReceiveMoney size={100} color="green"/>
         <p>Add Income</p>
         </div>
+      </div>
+      <div className="transactions-wrapper">
+        {transactions.map((transaction)=>(
+          <div
+           key={transaction.id} 
+           style={{
+            width:"100%",
+            height: "50px",
+            background: transaction.type === "expense" ? "red":"green",
+            display:"flex",
+            alignItems:"center",
+            justifyContent: "space-between"
+
+          }}
+          >
+            <div>{transaction.description}</div>
+            <div>{transaction.amount}</div>
+          </div>
+        ))}
       </div>
     </div>
     <Footer/>
